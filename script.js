@@ -113,7 +113,7 @@ function importTourState(state)
 function onVirtualTourInit()
 {
     var updateTexts = function() {
-        document.title = this.trans("tour.name")
+        // document.title = this.trans("tour.name")
     };
 
     tour.locManager.bind(TDV.Tour.LocaleManager.EVENT_LOCALE_CHANGED, updateTexts.bind(tour.locManager));
